@@ -1,0 +1,775 @@
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+      "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+      "Source Han Sans CN", sans-serif;
+  }
+  
+  .main-container {
+    overflow: hidden;
+  }
+  
+  .main-container,
+  .main-container * {
+    box-sizing: border-box;
+  }
+  
+  input,
+  select,
+  textarea,
+  button {
+    outline: 0;
+  }
+  
+  .main-container {
+    position: relative;
+    width: 375px;
+    height: 812px;
+    margin: 0 auto;
+    font-size: 0px;
+    background: #ffffff;
+    overflow: hidden;
+  }
+  .notifications {
+    display: block;
+    position: relative;
+    height: 24px;
+    margin: 53px 0 0 30px;
+    color: #2b2b2b;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 20;
+  }
+  .line-9 {
+    position: relative;
+    width: 345px;
+    height: 0.7px;
+    margin: 14.3px 0 0 15px;
+    background: url(../assets/images/normal_line.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 21;
+  }
+  .flex-row-d {
+    position: relative;
+    width: 303px;
+    height: 42px;
+    margin: 8px 0 0 61px;
+    z-index: 51;
+  }
+  .rectangle-9a {
+    position: absolute;
+    width: 44px;
+    height: 33px;
+    top: 0;
+    left: 0;
+    background: #d9d9d9;
+    color: #000000;
+    border: 1px solid #000000;
+    z-index: 50;
+    border-radius: 5px;
+  }
+  .notification-text.confirmed {
+    color: green; 
+  }
+  
+  .notification-text.canceled {
+    color: red; 
+  }
+  
+  .notification-text.completed {
+    left: -35px;
+    top: -1px;
+    color: orange; 
+  }
+  .rectangle-1n {
+    position: absolute;
+    width: 103px;
+    height: 31px;
+    top: -1px;
+    left: 143px;
+    cursor: pointer;
+    background: #d9d9d9;
+    color: #32921a;
+    border: 1px solid #000000;
+    z-index: 46;
+    border-radius: 5px;
+  }
+  .confirmed {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    width: 154px;
+    height: 31px;
+    top: 4px;
+    left: 153px;
+    color: #32921a;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+    z-index: 47;
+  }
+  .flex-row-e {
+    position: relative;
+    width: 307px;
+    height: 50px;
+    margin: -1px 0 0 27px;
+    z-index: 49;
+  }
+  .rectangle-2 {
+    position: absolute;
+    width: 108px;
+    height: 31px;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    background: #d9d9d9;
+    color: #f40e0e;
+    border: 1px solid #000000;
+    z-index: 42;
+    border-radius: 5px;
+  }
+  .rectangle-3 {
+    position: absolute;
+    width: 108px;
+    height: 31px;
+    top: -1px;
+    left: -1px;
+    background: #d9d9d9;
+    border: 1px solid #000000;
+    z-index: 44;
+    border-radius: 5px;
+  }
+  .completed {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    width: 113px;
+    height: 40px;
+    top: 4px;
+    left: 11px;
+    color: #f40e0e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+    z-index: 43;
+  }
+  .completed-4 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    width: 113px;
+    height: 40px;
+    top: 4px;
+    left: 11px;
+    color: #f40e0e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+    z-index: 45;
+  }
+  .rectangle-5 {
+    position: absolute;
+    width: 116px;
+    height: 31px;
+    top: -1px;
+    left: 173px;
+    cursor: pointer;
+    background: #d9d9d9;
+    color:rgb(195, 0, 255);
+    border: 1px solid #000000;
+    z-index: 48;
+    border-radius: 5px;
+  }
+  .canceled {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    width: 111px;
+    height: 40px;
+    top: 5px;
+    left: 196px;
+    color: rgba(0, 0, 0, 0.63);
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+    z-index: 49;
+  }
+  .flex-row-d-6 {
+    position: relative;
+    width: 315px;
+    height: 37px;
+    margin: 0 0 0 32px;
+    z-index: 4;
+  }
+  .sea-grill-of-merrick-park {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 24px;
+    top: 5px;
+    left: -5px;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+  }
+  .hrs-ago-1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    position: absolute;
+    width: 43px;
+    height: 24px;
+    top: 5px;
+    left: 267px;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: right;
+    white-space: nowrap;
+    z-index: 4;
+  }
+  .flex-row-f {
+    position: relative;
+    width: 326px;
+    height: 20px;
+    margin: -3px 0 0 32px;
+    z-index: 41;
+  }
+  .notification-text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 20px;
+  top: 5px;
+  left: -5px;
+  color: #5e5e5e; /* Set uniform text color */
+  font-family: Albert Sans, var(--default-font-family);
+  font-size: 12px; /* Set uniform font size */
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 2;
+}
+  .your-table-is-booked {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 20px;
+    top: 5px;
+    left: -5px;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 2;
+  }
+  .view-details {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    position: absolute;
+    width: 57px;
+    height: 12px;
+    top: 8px;
+    left: 261px;
+    color: #ed4c5c;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: right;
+    text-decoration: underline;
+    white-space: nowrap;
+    z-index: 41;
+  }
+  .line-7 {
+    position: relative;
+    width: 345px;
+    height: 2.5px;
+    margin: 19.5px 0 0 17px;
+    background: url(../assets/images/thin_line2.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 14;
+  }
+  .flex-row-b {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 315px;
+    height: 24px;
+    margin: 20px 0 0 32px;
+    z-index: 25;
+  }
+  .sea-grill-of-merrick-park-8 {
+    flex-shrink: 0;
+    position: relative;
+    height: 24px;
+    color: #5e5e5e;
+    top: 10px;
+    left: -7px;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 23;
+  }
+  .hrs-ago-9 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    position: relative;
+    top: 10px;
+    left: 15px;
+    width: 47px;
+    height: 24px;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: right;
+    white-space: nowrap;
+    z-index: 25;
+  }
+  .your-table-booked {
+    display: block;
+    position: relative;
+    height: 20px;
+    margin: 10px 0 0 32px;
+    color: #5e5e5e;
+    top: 13px;
+    left: -4px;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 24;
+  }
+  .line-a {
+    position: relative;
+    width: 345px;
+    height: 0.5px;
+    bottom: -8px;
+    margin: 19.5px 0 0 17px;
+    background: url(../assets/images/thin_line2.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 15;
+  }
+  .flex-row-d-b {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 315px;
+    height: 26px;
+    margin: 20px 0 0 32px;
+    z-index: 9;
+  }
+  .sea-grill-merrick-park-0 {
+    flex-shrink: 0;
+    position: relative;
+    height: 24px;
+    color: #5e5e5e;
+    top: -5px;
+    left: -4px;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 7;
+  }
+  .days-ago_1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    position: relative;
+    top: -6px;
+    left: 2px;
+    width: 52px;
+    height: 24px;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: right;
+    white-space: nowrap;
+    z-index: 9;
+  }
+  .thankyou-for-visiting {
+    display: block;
+    position: relative;
+    height: 20px;
+    margin: 8px 0 0 32px;
+    top: -4px;
+    left: -4px;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 8;
+  }
+  .line-c {
+    position: relative;
+    width: 345px;
+    height: 0.5px;
+    top: -5px;
+    margin: 19.5px 0 0 17px;
+    background: url(../assets/images/thin_line2.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 17;
+  }
+  .flex-row-ba {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 315px;
+    height: 26px;
+    margin: 20px 0 0 32px;
+    z-index: 13;
+  }
+  .sea-grill-merrick-park-d {
+    flex-shrink: 0;
+    position: relative;
+    top: -17px;
+    left: -3px;
+    height: 24px;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 11;
+  }
+  .days-ago-e {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    position: relative;
+    top: -17px;
+    left: 2px;
+    width: 52px;
+    height: 24px;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: right;
+    white-space: nowrap;
+    z-index: 13;
+  }
+  .booking-canceled {
+    display: block;
+    position: relative;
+    top: -14px;
+    left: -3px;
+    height: 20px;
+    margin: 8px 0 0 32px;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 12;
+  }
+  .line-f {
+    position: relative;
+    width: 345px;
+    height: 0.5px;
+    top: -13px;
+    margin: 19.5px 0 0 17px;
+    background: url(../assets/images/thin_line2.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 18;
+  }
+  .flex-row {
+    position: relative;
+    width: 315px;
+    height: 37px;
+    margin: 20px 0 0 32px;
+    z-index: 5;
+  }
+  .sea-grill-of-merrick-park-10 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 24px;
+    top: -15px;
+    left: -13px;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 1;
+  }
+  .hrs-ago-11 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    position: absolute;
+    width: 47px;
+    height: 24px;
+    top: -16px;
+    left: 255px;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: right;
+    white-space: nowrap;
+    z-index: 5;
+  }
+  .your-table-is-booked-12 {
+    display: block;
+    position: relative;
+    top: 3px;
+    left: -3px;
+    height: 20px;
+    margin: -3px 0 0 32px;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 3;
+  }
+  .rectangle-13 {
+    position: relative;
+    width: 375px;
+    height: 70px;
+    margin: 121px 0 0 0;
+    background: #ffffff;
+    top: 60px;
+    z-index: 27;
+    overflow: visible auto;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 -1px 10px 0 rgba(51, 51, 51, 0.1);
+  }
+  .flex-row-e-14 {
+    position: relative;
+    width: 345px;
+    height: 3px;
+    margin: 0 0 0 15px;
+    z-index: 28;
+  }
+  .rectangle-15 {
+    position: absolute;
+    width: 70px;
+    height: 3px;
+    top: 0;
+    left: 93px;
+    background: #f49b32;
+    z-index: 28;
+  }
+  .line-16 {
+    position: absolute;
+    width: 345px;
+    height: 0.5px;
+    top: 1.5px;
+    left: 0;
+    background: url(../assets/images/thin_line2.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 16;
+  }
+  .flex-row-bed {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 286.667px;
+    height: 20px;
+    margin: 16px 0 0 43px;
+    z-index: 39;
+  }
+  .clarity-home-line {
+    flex-shrink: 0;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: url(../assets/images/home_icon.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 29;
+  }
+  .vector_4 {
+    flex-shrink: 0;
+    position: relative;
+    width: 16.667px;
+    height: 17.5px;
+    background: url(../assets/images/current_notification.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 36;
+  }
+  .vector-17 {
+    flex-shrink: 0;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    background: url(../assets/images/history_icon.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 39;
+  }
+  .vector-18a {
+    flex-shrink: 0;
+    position: relative;
+    width: 13.333px;
+    height: 3.333px;
+    background: url(../assets/images/more_icon.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 33;
+  }
+  .flex-row-da {
+    position: relative;
+    width: 299px;
+    height: 15px;
+    margin: 3px 0 0 35px;
+    z-index: 37;
+  }
+  .home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 36px;
+    height: 15px;
+    bottom: 0;
+    left: 0;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 30;
+  }
+  .notifications-19 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 74px;
+    height: 15px;
+    bottom: 0;
+    left: 71px;
+    color: #f49b32;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 34;
+  }
+  .history {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 33px;
+    height: 12px;
+    bottom: 2px;
+    left: 182px;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 37;
+  }
+  .more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 24px;
+    height: 12px;
+    bottom: 2px;
+    left: 275px;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 31;
+  }
+  .pngkit-black-bar-png {
+    position: absolute;
+    width: 375px;
+    height: 39px;
+    top: 0;
+    left: 0;
+    background: url(../assets/images/navbar_image.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 40;
+  }
+  

@@ -1,0 +1,337 @@
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+      "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+      "Source Han Sans CN", sans-serif;
+  }
+  
+  .main-container {
+    overflow: hidden;
+  }
+  
+  .main-container,
+  .main-container * {
+    box-sizing: border-box;
+  }
+  
+  input,
+  select,
+  textarea,
+  button {
+    outline: 0;
+  }
+  
+  .main-container {
+    position: relative;
+    width: 375px;
+    height: 812px;
+    margin: 0 auto;
+    background: #ffffff;
+    overflow: hidden;
+  }
+  .line {
+    position: relative;
+    width: 345px;
+    height: 0.7px;
+    margin: 91.3px 0 0 15px;
+    background: url(../assets/images/normal_line.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 1;
+  }
+  .bob-smith1 {
+    display: block;
+    position: relative;
+    height: 24px;
+    margin: 140px 0 0 148px;
+    color: #f49b32;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 4;
+  }
+  .contact-info {
+    display: block;
+    position: relative;
+    height: 24px;
+    margin: 10px 0 0 140px;
+    color: #5e5e5e;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 5;
+  }
+  .email {
+    display: block;
+    position: relative;
+    height: 24px;
+    margin: 10px 0 0 104px;
+    color: #5e5e5e;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 6;
+  }
+  .frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+    position: relative;
+    width: 102px;
+    margin: 49px 0 0 136px;
+    padding: 5px 15px 5px 15px;
+    cursor: pointer;
+    background: #f49b32;
+    border: none;
+    z-index: 25;
+    border-radius: 5px;
+  }
+  .edit-profile {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 24px;
+    color: #ffffff;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 26;
+  }
+  .rectangle1 {
+    position: relative;
+    width: 375px;
+    height: 70px;
+    margin: 335px 0 0 0;
+    background: #ffffff;
+    z-index: 10;
+    overflow: visible auto;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 -1px 10px 0 rgba(51, 51, 51, 0.1);
+  }
+  .rectangle-1v {
+    position: relative;
+    width: 70px;
+    height: 3px;
+    margin: 0 0 0 288px;
+    background: #f49b32;
+    z-index: 11;
+  }
+  .flex-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 286.667px;
+    height: 20px;
+    margin: 16px 0 0 43px;
+    z-index: 22;
+  }
+  .clarity-home-line2 {
+    flex-shrink: 0;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: url(../assets/images/home_icon.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 12;
+  }
+  .vector9 {
+    flex-shrink: 0;
+    position: relative;
+    width: 16.667px;
+    height: 17.5px;
+    background: url(../assets/images/notification_icon.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 19;
+  }
+  .vector-2 {
+    flex-shrink: 0;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    background: url(../assets/images/history_icon.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 22;
+  }
+  .vector-3x {
+    flex-shrink: 0;
+    position: relative;
+    width: 13.333px;
+    height: 3.333px;
+    background: url(../assets/images/current_more.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 16;
+  }
+  .flex-row-fba {
+    position: relative;
+    width: 299px;
+    height: 15px;
+    margin: 3px 0 0 35px;
+    z-index: 20;
+  }
+  .home2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 36px;
+    height: 15px;
+    bottom: 0;
+    left: 0;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 13;
+  }
+  .notifications2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 74px;
+    height: 15px;
+    bottom: 0;
+    left: 71px;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 17;
+  }
+  .history2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 33px;
+    height: 12px;
+    bottom: 2px;
+    left: 182px;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 20;
+  }
+  .more2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 24px;
+    height: 12px;
+    bottom: 2px;
+    left: 275px;
+    color: #f49b32;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 14;
+  }
+  .pngkit-black-bar-png {
+    position: absolute;
+    width: 375px;
+    height: 39px;
+    top: 0;
+    left: 0;
+    background: url(../assets/images/navbar_image.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 23;
+  }
+  .your-profile {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 24px;
+    top: 53px;
+    left: 30px;
+    color: #2b2b2b;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+  }
+  .account-logout {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 55px;
+    left: 325px;
+    background: url(../assets/images/logout_icon.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 24;
+    overflow: hidden;
+  }
+  .ellipse {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 132px;
+    left: 141px;
+    background: url(../assets/images/big_profile_image.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 2;
+    border-radius: 50%;
+  }
+  .ellipse-4 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 192px;
+    left: 201px;
+    background: url(../assets/images/black_circle.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 7;
+    border-radius: 50%;
+  }
+  .camera {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 196px;
+    left: 205px;
+    background: url(../assets/images/camera_icon.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 8;
+    overflow: hidden;
+  }
+  

@@ -1,0 +1,493 @@
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+      "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+      "Source Han Sans CN", sans-serif;
+  }
+  
+  .main-container1 {
+    overflow: hidden;
+  }
+  
+  .main-container1,
+  .main-container1 * {
+    box-sizing: border-box;
+  }
+  
+  input,
+  select,
+  textarea,
+  button {
+    outline: 0;
+  }
+  
+  .main-container1 {
+    position: relative;
+    width: 345px;
+    height: 820px;
+    max-height: 140vh;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .menu-image-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 95vh;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; 
+  }
+  .menu-list {
+    padding: 20px;
+    background-color: white;
+  }
+  .menu-image {
+    max-width: 100%;
+    max-height: 100%;  
+    border-radius: 10px;
+}
+  
+  .line-093 {
+    position: relative;
+    width: 285px;
+    height: 1px;
+    top: -24px;
+    left: -25px;
+    margin: 71px 0 0 30px;
+    background: url(../assets/images/normal_line.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 4;
+  }
+  .rectangle70 {
+    position: absolute;
+    width: 345px;
+    height: 324px;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    border-radius: 5px;
+  }
+  .chevron-down_2 {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 31px;
+    left: 32px;
+    background: url(../assets/images/close_icon.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 5;
+  }
+  .villagio-restaurant-bar3 {
+    position: absolute;
+    width: 196px;
+    height: 19px;
+    top: 27px;
+    left: 61px;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    text-align: left;
+    text-overflow: initial;
+    white-space: nowrap;
+    z-index: 2;
+  }
+  .SeaGrill2 {
+    position: relative;
+    color: #f49b32;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    text-align: left;
+  }
+  .restaurant-bar-1 {
+    position: relative;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    text-align: left;
+  }
+  .menu01 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 19px;
+    top: 27px;
+    left: 267px;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 3;
+  }
+  .asset-x {
+    position: absolute;
+    width: 344px;
+    height: 252px;
+    top: 72px;
+    left: 1px;
+    background: url(../assets/images/menu_background.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 1;
+  }
+  .round-lunch-dining {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 101px;
+    left: 32px;
+    background: #f49b32;
+    z-index: 24;
+    overflow: hidden;
+    border-radius: 25px;
+  }
+  .vector5 {
+    position: relative;
+    width: 12px;
+    height: 10.8px;
+    margin: 5px 0 0 4px;
+    background: url(../assets/images/menu.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 25;
+  }
+  .frame-p0 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 27px;
+    position: absolute;
+    width: 227px;
+    height: 183px;
+    top: 102px;
+    left: 61px;
+    z-index: 6;
+  }
+  .group {
+    flex-shrink: 0;
+    position: relative;
+    width: 227px;
+    height: 43px;
+    z-index: 7;
+  }
+  .lunch-time {
+    position: relative;
+    width: 227px;
+    height: 17px;
+    margin: 0 0 0 0;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.8px;
+    text-align: left;
+    text-overflow: initial;
+    white-space: nowrap;
+    z-index: 8;
+  }
+  .lunch {
+    position: relative;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.8px;
+    text-align: left;
+  }
+  .weekday-lunch {
+    position: relative;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.8px;
+    text-align: left;
+  }
+  .flex-row-c {
+    position: relative;
+    width: 181px;
+    height: 20px;
+    margin: 6px 0 0 0;
+    z-index: 11;
+  }
+  .ri-external-link-line {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 0;
+    z-index: 11;
+  }
+  .vector-10 {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    margin: 2.5px 0 0 2.5px;
+    background: url(../assets/images/download_icon.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 12;
+  }
+  .download-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 12px;
+    top: 4px;
+    left: 26px;
+    color: #f49b32;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 12px;
+    text-align: left;
+    text-decoration: underline;
+    white-space: nowrap;
+    z-index: 9;
+  }
+  .view-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 12px;
+    top: 4px;
+    left: 129px;
+    color: #f49b32;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 12px;
+    text-align: left;
+    text-decoration: underline;
+    white-space: nowrap;
+    z-index: 10;
+  }
+  .group-2 {
+    flex-shrink: 0;
+    position: relative;
+    width: 101px;
+    height: 43px;
+    font-size: 0px;
+    z-index: 13;
+  }
+  .dinner-menu {
+    display: block;
+    position: relative;
+    height: 17px;
+    margin: 0 0 0 0;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.8px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 14;
+  }
+  .ri-external-link-line-3 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 23px;
+    left: 0;
+    z-index: 16;
+  }
+  .vector-4i {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    margin: 2.5px 0 0 2.5px;
+    background: url(../assets/images/download_icon.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 17;
+  }
+  .download-menu-5 {
+    position: absolute;
+    width: 75px;
+    height: 12px;
+    top: 27px;
+    left: 26px;
+    cursor: pointer;
+    color: #f49b32;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 12px;
+    white-space: nowrap;
+    background: transparent;
+    border: none;
+    z-index: 15;
+  }
+  .group-6 {
+    flex-shrink: 0;
+    position: relative;
+    width: 184px;
+    height: 43px;
+    font-size: 0px;
+    z-index: 18;
+  }
+  .wine-desserts-drinks {
+    display: block;
+    position: relative;
+    height: 17px;
+    margin: 0 0 0 0;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.8px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 19;
+  }
+  .external-link-line {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 23px;
+    left: 0;
+    z-index: 21;
+  }
+  .vector-7s {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    margin: 2.5px 0 0 2.5px;
+    background: url(../assets/images/download_icon.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 22;
+  }
+  .download-menu-8 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 12px;
+    top: 27px;
+    left: 26px;
+    color: #f49b32;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 12px;
+    text-align: left;
+    text-decoration: underline;
+    white-space: nowrap;
+    z-index: 20;
+  }
+  .view-menu-9 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 12px;
+    top: 28px;
+    left: 132px;
+    color: #f49b32;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 12px;
+    text-align: left;
+    text-decoration: underline;
+    white-space: nowrap;
+    z-index: 23;
+  }
+  .dinner-dining {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 171px;
+    left: 32px;
+    background: #f49b32;
+    z-index: 26;
+    overflow: hidden;
+    border-radius: 25px;
+  }
+  .vector-ai {
+    position: relative;
+    width: 12px;
+    height: 10.8px;
+    margin: 5px 0 0 4px;
+    background: url(../assets/images/dinner_menu.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 27;
+  }
+  .view-menu-b {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 12px;
+    top: 202px;
+    left: 190px;
+    color: #f49b32;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 12px;
+    text-align: left;
+    text-decoration: underline;
+    white-space: nowrap;
+    z-index: 30;
+  }
+  .view-menu-b8 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 12px;
+    top: 202px;
+    left: 87px;
+    color: #f49b32;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 12px;
+    text-align: left;
+    text-decoration: underline;
+    white-space: nowrap;
+    z-index: 30;
+  }
+  .drink {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 241px;
+    left: 32px;
+    background: #f49b32;
+    z-index: 28;
+    overflow: hidden;
+    border-radius: 25px;
+  }
+  .vector-cd {
+    position: relative;
+    width: 10px;
+    height: 10.556px;
+    margin: 5px 0 0 5px;
+    background: url(../assets/images/wine_dessert_menu.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 29;
+  }
+  

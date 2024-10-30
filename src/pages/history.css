@@ -1,0 +1,996 @@
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+      "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+      "Source Han Sans CN", sans-serif;
+  }
+  
+  .main-container {
+    overflow: hidden;
+  }
+  
+  .main-container,
+  .main-container * {
+    box-sizing: border-box;
+  }
+  
+  input,
+  select,
+  textarea,
+  button {
+    outline: 0;
+  }
+  
+  .main-container {
+    position: relative;
+    width: 375px;
+    height: 812px;
+    margin: 0 auto;
+    font-size: 0px;
+    background: #ffffff;
+    overflow: hidden;
+  }
+  .history-1 {
+    display: block;
+    position: relative;
+    height: 24px;
+    margin: 53px 0 0 30px;
+    color: #2b2b2b;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+  }
+  .line2 {
+    position: relative;
+    width: 345px;
+    height: 0.7px;
+    margin: 14.3px 0 0 15px;
+    background: url(../assets/images/normal_line.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 1;
+  }
+  .flex-row-ed {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 315px;
+    height: 24px;
+    margin: 22px 0 0 30px;
+    z-index: 12;
+  }
+  .sea-grill-of-merrick-park12 {
+    flex-shrink: 0;
+    position: relative;
+    height: 24px;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 6;
+  }
+  .hrs-ago1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    position: relative;
+    width: 43px;
+    height: 12px;
+    color: #5e5e5e;
+    left: -20px;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: right;
+    white-space: nowrap;
+    z-index: 12;
+  }
+  .flex-row-bd {
+    position: relative;
+    width: 315px;
+    height: 20px;
+    margin: 10px 0 0 30px;
+    z-index: 8;
+  }
+  .reserved {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 20px;
+    top: 0;
+    left: 0;
+    color: #f49b32;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 7;
+  }
+  .cancel-booking {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    position: absolute;
+    width: 73px;
+    height: 12px;
+    top: 7px;
+    left: 250px;
+    color: #ed4c5c;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: right;
+    text-decoration: underline;
+    white-space: nowrap;
+    z-index: 8;
+  }
+  .modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  .close-modal {
+    margin-top: 10px;
+  }  
+  .flex-row-a {
+    position: relative;
+    width: 312.5px;
+    height: 17.333px;
+    margin: 11px 0 0 32.5px;
+    z-index: 16;
+  }
+  .date-time {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 14px;
+    top: 0;
+    left: 32.5px;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 16;
+  }
+  .vector-z {
+    position: absolute;
+    width: 15px;
+    height: 16.667px;
+    top: 0.67px;
+    left: 0;
+    background: url(../assets/images/date_icon.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 15;
+  }
+  .edit-booking {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    position: absolute;
+    width: 59px;
+    height: 12px;
+    top: 3px;
+    left: 253.5px;
+    color: #00a144;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: right;
+    white-space: nowrap;
+    z-index: 9;
+  }
+  .modal-overlay1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  .flex-row-becd {
+    position: relative;
+    width: 312.333px;
+    height: 17px;
+    margin: 11.667px 0 0 32.667px;
+    z-index: 73;
+  }
+  .button-indoor {
+    position: absolute;
+    width: 42px;
+    height: 17px;
+    top: 0;
+    left: 270.333px;
+    cursor: pointer;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    white-space: nowrap;
+    background: transparent;
+    border: none;
+    z-index: 73;
+  }
+  .button-bob-smith {
+    position: absolute;
+    width: 58px;
+    height: 14px;
+    top: 2px;
+    left: 141.333px;
+    cursor: pointer;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    white-space: nowrap;
+    background: transparent;
+    border: none;
+    z-index: 23;
+  }
+  .button-guest {
+    position: absolute;
+    width: 41px;
+    height: 14px;
+    top: 3px;
+    left: 32.333px;
+    cursor: pointer;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    white-space: nowrap;
+    background: transparent;
+    border: none;
+    z-index: 22;
+  }
+  .guests1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 14px;
+    top: 2px;
+    left: 33.333px;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 35;
+  }
+  .guest_name_2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 14px;
+    top: 2px;
+    left: 140px;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 35;
+  }
+  .placement_3 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 14px;
+    top: 2px;
+    left: 265px;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 35;
+  }
+  .vector-3z {
+    position: absolute;
+    width: 15.75px;
+    height: 12.75px;
+    top: 3px;
+    left: 114.333px;
+    background: url(../assets/images/user_icon.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 19;
+  }
+  .vector-4z {
+    position: absolute;
+    width: 16.667px;
+    height: 13.333px;
+    top: 3.333px;
+    left: 237px;
+    background: url(../assets/images/table_icon.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 68;
+  }
+  .vector-5z {
+    position: absolute;
+    width: 16.667px;
+    height: 12.5px;
+    top: 4.333px;
+    left: 0;
+    background: url(../assets/images/number_of_people.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 21;
+  }
+  .line-6 {
+    position: relative;
+    width: 345px;
+    height: 0.5px;
+    margin: 22.5px 0 0 15px;
+    background: url(../assets/images/thin_line2.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 2;
+  }
+  .flex-row-cbe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 315px;
+    height: 24px;
+    margin: 20px 0 0 30px;
+    z-index: 27;
+  }
+  .span-sea-grill {
+    flex-shrink: 0;
+    position: relative;
+    height: 24px;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 25;
+  }
+  .span-days-ago {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    position: relative;
+    width: 52px;
+    height: 12px;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: right;
+    white-space: nowrap;
+    z-index: 27;
+  }
+  .span-cancelled {
+    display: block;
+    position: relative;
+    height: 20px;
+    margin: 10px 0 0 30px;
+    color: #ed4c5c;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 26;
+  }
+  .span-rebook1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    position: relative;
+    width: 35px;
+    height: 12px;
+    margin: -10px 0 0 303px;
+    color: #428bc1;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: right;
+    white-space: nowrap;
+    z-index: 11;
+  }
+  .flex-row-db {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 194.5px;
+    height: 17.333px;
+    margin: 9px 0 0 32.5px;
+    z-index: 31;
+  }
+  .vector-7 {
+    flex-shrink: 0;
+    position: relative;
+    width: 15px;
+    height: 16.667px;
+    background: url(../assets/images/date_icon.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 30;
+  }
+  .date-time-8 {
+    flex-shrink: 0;
+    position: relative;
+    height: 14px;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 31;
+  }
+  .flex-row-cf {
+    position: relative;
+    width: 313.333px;
+    height: 17px;
+    margin: 10.667px 0 0 31.667px;
+    z-index: 74;
+  }
+  .button-indoor-9 {
+    position: absolute;
+    width: 42px;
+    height: 17px;
+    top: 0;
+    left: 271.333px;
+    cursor: pointer;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    white-space: nowrap;
+    background: transparent;
+    border: none;
+    z-index: 74;
+  }
+  .guests {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 14px;
+    top: 2px;
+    left: 33.333px;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 35;
+  }
+  .guest_name {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 14px;
+    top: 2px;
+    left: 140px;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 35;
+  }
+  .placement {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 14px;
+    top: 2px;
+    left: 265px;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 35;
+  }
+  .vector-a {
+    position: absolute;
+    width: 5.03%;
+    height: 75%;
+    top: 11.76%;
+    left: 36.81%;
+    background: url(../assets/images/user_icon.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 37;
+  }
+  .button-john-doe {
+    position: absolute;
+    width: 53px;
+    height: 14px;
+    top: 3px;
+    left: 143.333px;
+    cursor: pointer;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    white-space: nowrap;
+    background: transparent;
+    border: none;
+    z-index: 36;
+  }
+  .vector-b {
+    position: absolute;
+    width: 16.667px;
+    height: 13.333px;
+    top: 3.333px;
+    left: 238px;
+    background: url(../assets/images/table_icon.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 70;
+  }
+  .vector-c {
+    position: absolute;
+    width: 16.667px;
+    height: 12.5px;
+    top: 4.333px;
+    left: 0;
+    background: url(../assets/images/number_of_people.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 34;
+  }
+  .line-d {
+    position: relative;
+    width: 345px;
+    height: 0.5px;
+    margin: 23.5px 0 0 15px;
+    background: url(../assets/images/thin_line2.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 3;
+  }
+  .flex-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 315px;
+    height: 24px;
+    margin: 20px 0 0 30px;
+    z-index: 41;
+  }
+  .sea-grill-merrick-park2 {
+    flex-shrink: 0;
+    position: relative;
+    height: 17px;
+    left:-11px;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 39;
+  }
+  .days-ago {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    position: relative;
+    width: 55px;
+    height: 12px;
+    left:13px;
+    bottom:-3px;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: right;
+    white-space: nowrap;
+    z-index: 41;
+  }
+  .completed {
+    display: block;
+    position: relative;
+    height: 20px;
+    left:2px;
+    margin: 10px 0 0 30px;
+    color: #f49b32;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 40;
+  }
+  .flex-row-feed {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 195.5px;
+    height: 17.333px;
+    margin: 11px 0 0 32.5px;
+    z-index: 45;
+  }
+  .vector-e {
+    flex-shrink: 0;
+    position: relative;
+    width: 15px;
+    height: 16.667px;
+    background: url(../assets/images/date_icon.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 44;
+  }
+  .date-time-f {
+    flex-shrink: 0;
+    position: relative;
+    height: 14px;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 45;
+  }
+  .flex-row-a-10 {
+    position: relative;
+    width: 313.333px;
+    height: 17.833px;
+    margin: 9.667px 0 0 31.667px;
+    z-index: 75;
+  }
+  .indoor {
+    position: absolute;
+    width: 42px;
+    height: 17px;
+    top: 0;
+    left: 271.333px;
+    cursor: pointer;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    white-space: nowrap;
+    background: transparent;
+    border: none;
+    z-index: 75;
+  }
+  .guests-11 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 14px;
+    top: 3px;
+    left: 33.333px;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 51;
+  }
+  .guests_name_11 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 14px;
+    top: 3px;
+    left: 140px;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 51;
+  }
+  .placement-1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 14px;
+    top: 3px;
+    left: 265px;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 51;
+  }
+  .bob-smith {
+    position: absolute;
+    width: 58px;
+    height: 14px;
+    top: 3px;
+    left: 142.333px;
+    cursor: pointer;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    white-space: nowrap;
+    background: transparent;
+    border: none;
+    z-index: 47;
+  }
+  .vector-12 {
+    position: absolute;
+    width: 16.667px;
+    height: 13.333px;
+    top: 3.333px;
+    left: 238px;
+    background: url(../assets/images/table_icon.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 72;
+  }
+  .vector-13 {
+    position: absolute;
+    width: 5.03%;
+    height: 71.5%;
+    top: 28.04%;
+    left: 36.49%;
+    background: url(../assets/images/user_icon.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 46;
+  }
+  .vector-14 {
+    position: absolute;
+    width: 16.667px;
+    height: 12.5px;
+    top: 5.333px;
+    left: 0;
+    background: url(../assets/images/number_of_people.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 50;
+  }
+  .line-15 {
+    position: relative;
+    width: 345px;
+    height: 0.5px;
+    margin: 23.667px 0 0 15px;
+    background: url(../assets/images/thin_line2.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 4;
+  }
+  .rectangle-z {
+    position: relative;
+    width: 375px;
+    height: 70px;
+    margin: 186px 0 0 0;
+    background: #ffffff;
+    z-index: 53;
+    overflow: visible auto;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 -1px 10px 0 rgba(51, 51, 51, 0.1);
+  }
+  .rectangle-16 {
+    position: relative;
+    width: 70px;
+    height: 3px;
+    margin: 0 0 0 198px;
+    background: #f49b32;
+    z-index: 54;
+  }
+  .flex-row-dc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 286.667px;
+    height: 20px;
+    margin: 16px 0 0 43px;
+    z-index: 65;
+  }
+  .clarity-home-line-z {
+    flex-shrink: 0;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: url(../assets/images/home_icon.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 55;
+  }
+  .vector-17 {
+    flex-shrink: 0;
+    position: relative;
+    width: 16.667px;
+    height: 17.5px;
+    background: url(../assets/images/notification_icon.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 62;
+  }
+  .vector-18 {
+    flex-shrink: 0;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    background: url(../assets/images/current_history.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 65;
+  }
+  .vector-19 {
+    flex-shrink: 0;
+    position: relative;
+    width: 13.333px;
+    height: 3.333px;
+    background: url(../assets/images/more_icon.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 59;
+  }
+  .flex-row-b {
+    position: relative;
+    width: 299px;
+    height: 15px;
+    margin: 3px 0 0 35px;
+    z-index: 63;
+  }
+  .home3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 36px;
+    height: 15px;
+    bottom: 0;
+    left: 0;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 56;
+  }
+  .notifications3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 74px;
+    height: 15px;
+    bottom: 0;
+    left: 71px;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 60;
+  }
+  .history3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 33px;
+    height: 12px;
+    bottom: 2px;
+    left: 182px;
+    color: #f49b32;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 63;
+  }
+  .more3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 24px;
+    height: 12px;
+    bottom: 2px;
+    left: 275px;
+    color: #5e5e5e;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 57;
+  }
+  .pngkit-black-bar-png {
+    position: absolute;
+    width: 375px;
+    height: 39px;
+    top: 0;
+    left: 0;
+    background: url(../assets/images/navbar_image.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 66;
+  }
+  
