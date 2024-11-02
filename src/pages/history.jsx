@@ -138,7 +138,7 @@ export default function History({ initialBookingData = {} }) {
         <div className='flex-row-dc'>
           <div
             className='clarity-home-line-z'
-            onClick={() => navigate('/home')}
+            onClick={() => navigate('/')}
             role='button'
             aria-label='Home'
           />

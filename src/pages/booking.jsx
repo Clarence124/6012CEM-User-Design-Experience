@@ -112,7 +112,7 @@ export default function Booking() {
       <div className='flex-row-ccq'>
         <div 
           className='mdi-chevron-down' 
-          onClick={() => navigate('/home')}
+          onClick={() => navigate('/')}
           role='button'
           aria-label='Back to homepage' 
         />

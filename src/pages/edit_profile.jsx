@@ -112,7 +112,7 @@ export default function EditProfile() {
         <div className='flex-row-3ef'>
           <div 
             className='clarity-home-line-3jq' 
-            onClick={() => navigate('/home')}
+            onClick={() => navigate('/')}
             role='button'
             aria-label='Home'
           />

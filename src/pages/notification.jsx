@@ -63,7 +63,7 @@ export default function Notifications() {
         <div className='flex-row-bed'>
           <div
             className='clarity-home-line'
-            onClick={() => navigate('/home')}
+            onClick={() => navigate('/')}
             role='button'
             aria-label='Home'
           />

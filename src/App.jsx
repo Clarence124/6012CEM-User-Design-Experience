@@ -18,7 +18,7 @@ export default function App() {
         <Router>
             <ProfileProvider>
                 <Routes>
-                    <Route path="/home" element={<Home />} />
+                    <Route path="/" element={<Home />} />
                     <Route path="/notification" element={<Notifications />} />
                     <Route path="/booking" element={<Booking />} />
                     <Route path="/reservation_info" element={<Reservation />} />

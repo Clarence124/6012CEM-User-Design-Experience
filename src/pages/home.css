@@ -1518,7 +1518,8 @@ button {
 .rectangle-4fa {
   position: relative;
   width: 327px;
-  height: 115px;
+  height: 100px;
+  top:-10px;
   margin: 17px 0 0 23px;
   background: url(../assets/images/poster_background.png)
     no-repeat center;

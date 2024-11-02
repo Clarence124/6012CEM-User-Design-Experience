@@ -26,7 +26,7 @@ export default function More() {
         <div className='flex-row'>
         <div
           className='clarity-home-line2'
-          onClick={() => navigate('/home')}
+          onClick={() => navigate('/')}
           role='button'
           aria-label='Home'
         />
@@ -63,7 +63,7 @@ export default function More() {
         {profile.image ? (
           <img src={profile.image} alt="Profile" className="profile-image" />
         ) : (
-          <div className="default-placeholder">No Image</div>
+          <div className="default-placeholder"></div>
         )}
       </div>
       <div className='ellipse-4' />

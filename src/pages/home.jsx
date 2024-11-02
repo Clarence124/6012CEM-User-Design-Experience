@@ -224,7 +224,7 @@ export default function Home() {
         <div className='flex-row-ed'>
         <div
           className='clarity-home-line1'
-          onClick={() => navigate('/home')}
+          onClick={() => navigate('/')}
           role='button'
           aria-label='Home'
         />
